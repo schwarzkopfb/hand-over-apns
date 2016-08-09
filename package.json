@@ -31,6 +31,7 @@
   "homepage": "https://github.com/schwarzkopfb/hand-over-apns#readme",
   "devDependencies": {
     "hand-over": "1.0.0-1",
+    "process.nexttick": "^1.0.1",
     "tap": "^6.3.0"
   },
   "peerDependencies": {

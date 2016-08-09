@@ -1,5 +1,7 @@
 'use strict'
 
+process.nextTick = require('process.nexttick')
+
 var assert   = require('assert'),
     test     = require('tap'),
     Handover = require('hand-over'),
