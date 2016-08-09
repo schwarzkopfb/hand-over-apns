@@ -1,0 +1,42 @@
+{
+  "name": "hand-over-apns",
+  "version": "1.0.0-0",
+  "description": "Apple Push Notification Service plugin for Handover",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js",
+    "coverage": "npm test -- --cov --coverage-report=lcov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schwarzkopfb/hand-over-apns.git"
+  },
+  "keywords": [
+    "apple",
+    "push",
+    "notification",
+    "service",
+    "apn",
+    "apns",
+    "handover",
+    "hand-over",
+    "hand",
+    "over"
+  ],
+  "author": "Schwarzkopf Balazs <schwarzkopfb@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schwarzkopfb/hand-over-apns/issues"
+  },
+  "homepage": "https://github.com/schwarzkopfb/hand-over-apns#readme",
+  "devDependencies": {
+    "hand-over": "1.0.0-1",
+    "tap": "^6.3.0"
+  },
+  "peerDependencies": {
+    "hand-over": "1.0.0-1"
+  },
+  "dependencies": {
+    "apn": "^1.7.8"
+  }
+}
