@@ -9,7 +9,7 @@ var inherits = require('util').inherits,
 function HandoverAPNS(opts) {
     Plugin.call(this, opts)
 
-    opts.onError    = this.onerror.bind(this)
+    opts.onError    = this.onError.bind(this)
     this.connection = new apn.Connection(opts)
 }
 
@@ -17,9 +17,9 @@ inherits(HandoverAPNS, Plugin)
 
 HandoverAPNS.prototype.name = 'apns'
 
-HandoverAPNS.prototype.onerror = function (err, notification, device) {
+HandoverAPNS.prototype.onError = function (err, notification, device) {
     if (device)
-        err.target = device.token.toString('hex')
+        err.target = device.token.toString(16)
 
     this.emit('error', err)
 }
